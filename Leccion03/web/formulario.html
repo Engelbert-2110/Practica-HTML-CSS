@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="/Leccion03/Css/estilos.css" />
+  </head>
+  <body>
+    <h1>Formulario Prueba</h1>
+    <p>Formulario con method get</p><br>
+
+    <form method="get">
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="idPersona"> Id Persona</label><br>
+        <input 
+          type="text" 
+          id="idPersona" 
+          name="idPersona" 
+          readonly 
+          value="The Killer2110"
+          disabled="true"
+        ><br>
+        
+        <label for="nombre">Nombre:</label><br />
+      <input 
+        type="text" 
+        id="nombre" 
+        name="nombre" 
+        placeholder="Escribe tu nombre"
+        required
+        autocomplete="off"
+      /><br>
+
+      <label for="apellido">Apellido:</label><br />
+      <input 
+        type="text" 
+        id="apellido" 
+        name="apellido" 
+        placeholder="Escribe tu apellido"
+        required="true"
+        autocomplete="off"
+      /><br>
+
+      <label for="edad">Edad:</label><br />
+      <input 
+        type="number" 
+        id="edad" 
+        name="edad" 
+      /><br>
+
+      <label>Genero:</label><br>
+      <input type="radio" id="genero" name=" genero" value="Masculino">
+      <label for="genero">Masculino</label>
+
+      <input type="radio" id="genero" name=" genero" value="Femenino">
+      <label for="genero">Femenino</label><br>
+
+      <label>Mùsica:</label><br>
+      <input type="checkbox" id="clasica" name="musica" value="clasica">
+      <label for="clasica">Clàsica</label><br>
+
+      <input type="checkbox" id="rock" name="musica" value="rock">
+      <label for="rock">Rock</label><br>
+
+      <input type="checkbox" id="banda" name="musica" value="banda">
+      <label for="banda">Banda</label><br>
+
+      <label for="autos">Autos</label><br>
+        <select name="autos" id="autos">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="volvo">Volvo</option>
+          <option value="Toyota" selected>Toyota</option>
+          <option value="ferrari">Ferrari</option>
+        </select> <br>
+
+      <label for="email">Email:</label><br />
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Escribe tu email" 
+        required
+      /></br>
+
+      <label for="password">Password:</label><br />
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        required="true"
+      /></br>
+
+      <label for="comentario">Comentario:</label><br>
+      <textarea name="comentario" id="comentario" cols="30" rows="5">Este es mi comentario sobre HTML</textarea><br>
+
+      </br><input type="submit" value="Enviar" />
+      <input type="submit" formnovalidate value="Enviar sin validar" />
+      <input type="reset" value="Resetear">
+
+
+      </fieldset>
+      
+    </form>
+
+
+    <br>
+    <p>formulario con el method Post</p>
+    
+    <form method="post">
+      <fieldset>
+        <legend>Datos Personales Two</legend>
+        <label for="nombre">Nombre:</label><br />
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required="true"
+      /><br />
+
+      <label for="apellido">Apellido:</label><br />
+      <input
+        type="text"
+        id="apellido"
+        name="apellido"
+        placeholder="Escribe tu apellido"
+        required="true"
+      /><br>
+
+      <label for="direccion">Direcciòn:</label><br />
+      <input
+        type="text"
+        id="direccion"
+        name="direccion"
+        placeholder="Escribe tu direcciòn"
+      /><br>
+
+      <label for="telefono">Telefono/Celular:</label><br />
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="Nùmero Tel."
+      /><br>
+
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required="true"
+      /><br>
+
+      <br /><input type="submit" value="Enviar" />
+      <input type="submit" formnovalidate value="Enviar sin validar" />
+
+
+      </fieldset>
+
+      
+    </form>
+
+    <a href="/Leccion03/index.html"> Inicio</a>
+  </body>
+</html>

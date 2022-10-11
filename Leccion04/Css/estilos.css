@@ -1,0 +1,29 @@
+/*Modificando el cabecero*/
+h1{
+    color: blue;
+}
+
+/*Modificando la Lista No ordenada*/
+ul{
+    list-style-type: none; /*Quitamos las viñetas que trae por defecto*/
+    background-color: #003566;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    
+}
+li{
+    float: left;
+}
+
+li a:hover{
+    background-color: #0081a7;
+}

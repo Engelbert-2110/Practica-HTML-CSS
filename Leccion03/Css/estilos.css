@@ -1,0 +1,150 @@
+
+/*Identificador Css*/
+#titulo_principal{
+    background-color: #c9cba3;
+    padding: 15px 25px;
+    margin: 15px;
+    color:#077187;
+    text-align: center;
+}
+
+h1{
+    background-color: #c9cba3;
+    padding: 15px 25px;
+    margin: 15px;
+    color:#1b4332;
+    text-align: center;
+}
+
+ h2{
+    color: #db0071;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    
+ }
+
+ p{
+    color: #0e273c;
+    font-size: 20px;
+ }
+
+ /*Clase de Css*/
+.titulo{
+    color: #c1121f;
+    font-size: 20px;
+}
+
+/*Clase de Css*/
+.tarjeta{
+    background-color: #a3cef1;
+    text-align: center;
+    border: 15px solid #003459;
+    margin: 10px 115px;
+    padding: 25px 25px;
+}
+
+/*Modificar link. Estado por defaul y Visitado */
+a:link , a:visited{
+    background-color:#c1121f;
+    color:white;
+    padding: 15px 25px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Modificar link. Estado activo y cuando nos ponemos encima del link*/
+a:active , a:hover{
+    background-color: #e5383b;
+    text-align: center; 
+}
+
+/*Modificar cuerpo de pagina*/
+body{
+    background-color: #f6aa1c;
+}
+
+/*Modificar tablas, cabecero y columnas(celdas)*/
+table, th, td{
+    color: black;
+    border: 2px solid black;
+    padding: 8px 8px;
+    margin:10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table{
+    width: 99%; /*Usar todo el espacio de la pantalla(largo de la tabla)*/
+}
+
+/*Modificar Titulo*/
+caption{
+    color: #00509d;
+    font-family:'trocchi',serif;
+    font-size: 40px;
+    line-height: 80px; /*Ancho de la caja del titulo*/
+}
+
+/*modificar cabecero*/
+th{
+    color: white;
+    background-color: #1b4332;
+}
+
+/*Modificar renglones pares*/
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+/*Modificar renglones impares*/
+tr:nth-child(odd){
+    background-color: #90a955;
+}
+
+/*Lista no Ordenada*/
+ul{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/*Lista Ordenada*/
+ol{
+    list-style: none; 
+    counter-reset: unset; /*Por cada lista nueva se reinicia el contador*/
+    text-align: center;
+    
+}
+
+ol li{
+    counter-increment: contador;/*Por cada elemento que se crea dentro de una lista se incrementa el contador*/
+    margin: 10px;
+}
+
+ol li::before{ /* before = antes del elemento*/
+    color: #008000      ;
+    content: "Curso " counter(contador) ") "; /* Agregamos un contador, unicamente la variable*/
+}
+
+ol li::after{
+    content: ".";
+}
+
+/*Lista Descripcion*/
+
+dl, dt, dd{
+    padding: 10px;
+}
+
+dt{
+    color: aliceblue;
+    background-color: #008000;
+    display: inline-block;
+}
+
+dd{
+   background-color: #9ef01a;    
+}
